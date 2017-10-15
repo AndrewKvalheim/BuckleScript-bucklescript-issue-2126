@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.5.0",
+    "bs-platform": "^1.9.3",
+    "bs-react-native": "^0.2.1",
     "jest-expo": "^21.0.2",
-    "react-test-renderer": "16.0.0-alpha.12"
+    "react-native-scripts": "1.5.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "reason-react": "^0.2.4"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "build": "bsb -make-world -clean-world",
+    "watch": "bsb -make-world -clean-world -w",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
